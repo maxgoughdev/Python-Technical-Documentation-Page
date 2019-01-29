@@ -1,5 +1,23 @@
+<link href="https://fonts.googleapis.com/css?family=Aleo" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+
+<nav id="navbar">
+  <header>Python</header><br>
+  <ul id="nav-ul">
+ <hr class="li-hr"> <a class="nav-link" href="#introduction_to_python">Introduction to Python</a><br>
+  <hr class="li-hr"><a class="nav-link" href="#what_can_python_be_used_for">What Can Python Be Used For</a><br>
+   <hr class="li-hr"><a class="nav-link" href="#how_to_install_python">How To Install Python</a><br>
+  <hr class="li-hr"> <a class="nav-link" href="#hello_world">Hello World</a><br>
+   <hr class="li-hr"><a class="nav-link" href="#syntax">Syntax</a><br>
+   <hr class="li-hr"><a class="nav-link" href="#variables">Variables</a><br>
+   <hr class="li-hr"><a class="nav-link" href="#loops">Loops</a><br>
+   <hr class="li-hr"><a class="nav-link" href="#strings">Strings</a><br>
+  <hr class="li-hr"> <a class="nav-link" href="#lists">Lists</a><br>
+  <hr class="li-hr"> <a class="nav-link" href="#references">References</a><br>
+  </ul>
+    </nav>
 <main id="main-doc">
-<section class="main-section" id="introduction">
+<section class="main-section" id="introduction_to_python">
   <header>Introduction to Python</header>
   <p>Python is an interpreted, object-oriented, high-level programming language with dynamic semantics.</p>
   <ul>
@@ -7,8 +25,8 @@
     <li>Simple and easy to learn syntax emphazises readability and redces cost of program maintenance</li>
     <li>Supports modules and packages, which encourages program modularity and code reuse</li></ul>
   </section> 
-  <section class="main-section" id="what_its_for">
-    <header>What Can Python Be Used For?</header>
+  <section class="main-section" id="what_can_python_be_used_for">
+    <header>What Can Python Be Used For</header>
     <ul>
     <li>Web development</li>
     <li>System scripting</li>
@@ -17,7 +35,7 @@
     </ul>
     
   </section>
-  <section class="main-section" id="python_install">
+  <section class="main-section" id="how_to_install_python">
     <header>How To Install Python</header>
     <p>Note: first check to make sure that Python is not already installed on your PC or Mac.</p>
     <ul>
@@ -29,10 +47,10 @@
     </ul>
   </section>
   <section class="main-section" id="hello_world">
-    <header>Hello World!</header>
+    <header>Hello World</header>
     <p>The most up-to-date and current source code, binaries, documentation, news, etc., is available on the official website of Python.</p>
     <p>Once you have downloaded Python, open up IDLE that comes as part of the installation and type the below mentioned program</p>
-    <code>print("Hello World!")</code>
+    <div class="code-background"><code>print("Hello World!")</code></div>
   </section>
   <section class="main-section" id="syntax">
     <header>Syntax</header>
@@ -47,87 +65,73 @@
     </ul>
     <p>Python provides no braces to indicate blocks of code for class and function definitions or flow control. Blocks of code are denoted by line indentation, which is rigidly enforced.</p>
     <p>The number of spaces in the indentation is variable, but all statements within the block must be indented the same amount. For example:</p>
-    <code>if True:<br>&nbsp;&nbsp;&nbsp;&nbsp;print("True")</code>
-    <code>if False:<br>&nbsp;&nbsp;&nbsp;&nbsp;print("False")</code>
+   <div class="code-background"> <code>if True:<br>&nbsp;&nbsp;&nbsp;&nbsp;print("True")</code>
+     <code>if False:<br>&nbsp;&nbsp;&nbsp;&nbsp;print("False")</code></div>
     <p>However, the following block generates an error:</p>
-    <code>if True:<br>print("Answer")<br>print("True")<br>else:<br>print("Answer")<br>print("False")</code>
+    <div class="code-background"><code>if True:<br>print("Answer")<br>print("True")<br>else:<br>print("Answer")<br>print("False")</code></div>
     <p>A hash sign (#) that is not inside a string literal begins a comment. All characters after the # and up to the end of the physical line are part of the comment and the Python interpreter ignores them.</p>
-    <code># Comment<br>print("Hello World!") # Comment</code>
+    <div class="code-background"><code># Comment<br>print("Hello World!") # Comment</code></div>
   </section>
-  <section class="main-section" id="variable">
+  <section class="main-section" id="variables">
     <header>Variables</header>
     <p>Variables are nothing but reserved memory locations to store values. This means that when you create a variable you reserve some space in memory.</p>
 
 <p>Based on the data type of a variable, the interpreter allocates memory and decides what can be stored in the reserved memory. Therefore, by assigning different data types to variables, you can store integers, decimals or characters in these variables.</p>
 
 <p>The operand to the left of the = operator is the name of the variable and the operand to the right of the = operator is the value stored in the variable.</p>
- <code>counter = 100 # An integer assignment<br>
+ <div class="code-background"><code>counter = 100 # An integer assignment<br>
 miles = 1000.0 # A floating point<br>
 name = "John" # A string<br>
 <br>
 print(counter)<br>
 print(miles)<br>
 print(name)
-    </code>
+   </code></div>
     </section>
   <section class="main-section" id="loops">
     <header>Loops</header>
     <p>A loop statement allows us to execute a statement or group of statements multiple times</p>
 
-<code>for x in range(6):<br>
+<div class="code-background"><code>for x in range(6):<br>
     print(x) #prints numbers from 0 to 5
-    </code>
+  </code></div>
     </section>
   <section class="main-section" id="strings">
     <header>Strings</header>
 <p>Strings are amongst the most popular types in Python. We can create them simply by enclosing characters in quotes. Python treats single quotes the same as double quotes. Creating strings is as simple as assigning a value to a variable.</p>
-<code>
+<div class="code-background"><code>
 var1 = 'Hello World!'<br>
 var2 = "Python Programming"
-    </code>
+  </code></div>
 <p>To access substrings, use the square brackets for slicing along with the index or indices to obtain your substring.</p>
-<code>
+<div class="code-background"><code>
 var1 = 'Hello World!'<br>
 var2 = "Python Programming"<br>
     <br>
 print("var1[0]: ", var1[0])<br>
 print("var2[1:5]: ", var2[1:5])
-  </code>
+  </code></div>
     <p>When the above code is executed, it produces the following result:</p>
-<code>
+<div class="code-background"><code>
 var1[0]: H<br>
 var2[1:5]: ytho
-    </code>
+  </code></div>
   </section>
   <section class="main-section" id="lists">
     <header>Lists</header>
 <p>The list is a most versatile datatype available in Python which can be written as a list of comma-separated values (items) between square brackets.</p>
 
 <p>Creating a list is as simple as putting different comma-separated values between square brackets.</p>
-<code>
+<div class="code-background"><code>
 list1 = ['physics', 'chemistry', 1997, 2000]<br>
 list2 = [1, 2, 3, 4, 5 ]<br>
 list3 = ["a", "b", "c", "d"]<br>
-    </code>
+  </code></div>
 <p>Similar to string indices, list indices start at 0, and lists can be sliced, concatenated and so on.</p>
   </section>
-  <section class="main-section" id="reference">
-    <header>Reference</header>
-    <p>All the documentation is taken from official <a href="https://docs.python.org/3/" target="_blank">Python</a>documentation</p>
+  <section class="main-section" id="references">
+    <header>References</header>
+    <p>All the documentation is taken from official <a href="https://docs.python.org/3/" target="_blank">Python</a> documentation</p>
 </section>
   
 </main>  
-<nav id="navbar">
-  <header>Python</header>
-  <a class="nav-link" href="#introduction">Introduction</a>
-  <a class="nav-link" href="#what_its_for">Python Uses</a>
-  <a class="nav-link" href="#python_intall">Install Python</a>
-  <a class="nav-link" href="#hello_world">Hello World</a>
-  <a class="nav-link" href="#syntax">Syntax</a>
-  <a class="nav-link" href="#variable">Variables</a>
-  <a class="nav-link" href="#loops">Loops</a>
-  <a class="nav-link" href="#strings">Strings</a>
-  <a class="nav-link" href="#lists">Lists</a>
-  <a class="nav-link" href="#reference">References</a>
-  
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
